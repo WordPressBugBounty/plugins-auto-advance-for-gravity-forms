@@ -3,17 +3,17 @@
 /*
 Plugin Name: Auto Advance for GravityForms
 Description:  The Auto Advance plugin for Gravity Forms makes the form filling process quicker and more user friendly for visitors. The plugin gives an easy way to choose which field(s) trigger an auto advance to the next step of your form.
-Version: 5.0.1
+Version: 5.0
 Author: Frog Eat Fly
-Tested up to: 6.6.2
+Tested up to: 6.0.2
 Author URI: https://www.multipagepro.com/
 */
 define( 'AAFG_PRO_PLAN_NAME', 'autoadvanceforgravityformspro' );
 define( 'AAFG_PLUS_PLAN_NAME', 'autoadvanceforgravityformsplus' );
 define( 'ZZD_AAGF_DIR', plugin_dir_path( __FILE__ ) );
 define( 'ZZD_AAGF_URL', plugin_dir_url( __FILE__ ) );
-define( 'AUTO_ADVANCED_ZZD', '5.0.1' );
-define( 'AUTO_ADVANCED_ASSETS', '5.0.1' );
+define( 'AUTO_ADVANCED_ZZD', '5.0' );
+define( 'AUTO_ADVANCED_ASSETS', '5.0' );
 if ( !function_exists( 'aafgf_fs' ) ) {
     // Create a helper function for easy SDK access.
     function aafgf_fs() {
