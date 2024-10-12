@@ -3,7 +3,7 @@ Contributors: zerozendesign, freemius
 Tags: Gravity Forms, Auto advance, Multi Step, Multi Form, Addon
 Requires PHP at least: 5.2.4
 License: GPLv2 or later
-Tested up to: 6.6.1
+Tested up to: 6.6.2
 Stable tag: 5.0
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,25 +14,35 @@ Description: The Auto Advance plugin for Gravity Forms makes the form filling pr
 The Multi Page Auto Advance plugin for Gravity Forms makes the form filling process quicker and more user friendly for visitors. There are 3 options available:
 
 Basic (Free) (Single Site)
-1. Auto advance for radio buttons, dropdown, polls and quizzes
-2. Hide/show next/previous/submit button
-(does not work with Gravity Forms Conversational Add-On)
+1. Auto advance for radio buttons and dropdown fields
 
-Pro ($39.99) (Up to 3 Sites) 
+Pro ($39.99) (Up to 3 Sites)
 Everything from Free +
 1. Works with products
-2. Works with check boxes [watch video](https://youtu.be/C66gjrMBaRw)
-3. Works with text and number fields [watch video](https://youtu.be/CXPq4270kA4)
+2. Works with polls and quizzes
+2. Works with check boxes watch video
+3. Works with text and number fields watch video
 2. Works with conditional logic
 3. Works with Gravity Forms Conversational Add-On
 4. Enable transition animations
 5. Adjust steps colors
 
+== [GET PRO](https://checkout.freemius.com/mode/dialog/plugin/6159/plan/10072/) ==
+
 Plus ($59.00 or $225 [lifetime]) (Unlimited Sites)
 Everything from Pro +
 Conversational settings [watch video](https://youtu.be/LUk1OwOZb-0)
 
+== [GET Plus](https://checkout.freemius.com/mode/dialog/plugin/6159/plan/22985/licenses/unlimited/) ==
+
 This plugin for WordPress and Gravity Forms completely transforms your boring forms into higher converting forms.
+
+== RESOURCES: ==
+
+Play with the Demos: [https://gformsdemo.com/gravity-forms-auto-advance-demo/](https://gformsdemo.com/gravity-forms-auto-advance-demo/)
+Watch Demo Video: [https://www.multipagepro.com/features](https://www.multipagepro.com/features)
+Buy the PRO Version: [https://www.multipagepro.com/pricing](https://www.multipagepro.com/pricing)
+See Changelog & Upcoming Releases: [https://trello.com/b/z4vTvFop/multipage-auto-advance](https://trello.com/b/z4vTvFop/multipage-auto-advance)
 
 == Videos ==
 
@@ -84,15 +94,6 @@ Version @4.6 (Mega release)
  - Added coloring steps
  - Added animations. 
  - New settings area
-
-
-== RESOURCES: ==
-
-Play with the Demos: [https://gformsdemo.com/gravity-forms-auto-advance-demo/](https://gformsdemo.com/gravity-forms-auto-advance-demo/)
-Watch Demo Video: [https://www.multipagepro.com/features](https://www.multipagepro.com/features)
-Buy the PRO Version: [https://www.multipagepro.com/pricing](https://www.multipagepro.com/pricing)
-See Changelog & Upcoming Releases: [https://trello.com/b/z4vTvFop/multipage-auto-advance](https://trello.com/b/z4vTvFop/multipage-auto-advance)
-
 
 
 == Installation ==
