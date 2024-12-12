@@ -32,7 +32,21 @@ jQuery( document ).ready( function($) {
 		click_perform = false;
 		
 		setTimeout( function() {				
-			$this.parents('form').trigger('submit', [true]);
+
+			var parents;
+			if( $this.parents('.gform_page').length > 0 ) {
+				parents = $this.parents('.gform_page');				
+			}
+			else {
+				parents = $this.parents('.gform_wrapper');			
+			}
+
+			if(parents.find("input[type='submit']").length > 0) {
+				parents.find("input[type='submit']").trigger('click');
+			}
+			else {
+				$this.parents('form').trigger('submit', [true]);
+			}
 		}, 200 );
    });
 	
