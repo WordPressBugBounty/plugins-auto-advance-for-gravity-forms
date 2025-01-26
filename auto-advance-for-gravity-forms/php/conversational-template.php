@@ -121,6 +121,7 @@
 										<div class="conv-form-footer-switch-step-up">'. $arrow_down .'</div>
 										<div class="conv-form-footer-switch-step-down">'. $arrow_down .'</div>
 									</div>
+									<div class="loader" style="display:none;"></div>
 								</div>
 							</div>
 						</div>

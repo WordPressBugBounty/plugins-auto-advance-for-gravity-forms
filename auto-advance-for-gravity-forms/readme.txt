@@ -1,10 +1,10 @@
 === Multi Page Auto Advance for Gravity Forms ===
-Contributors: zerozendesign, freemius
+Contributors: zerozendesign, duffcoventures
 Tags: Gravity Forms, Auto advance, Multi Step, Multi Form, Addon
 Requires PHP at least: 5.2.4 
 License: GPLv2 or later
-Tested up to: 6.6.2
-Stable tag: 5.0.2
+Tested up to: 6.7.1
+Stable tag: 5.0.4
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Description: The Auto Advance plugin for Gravity Forms makes the form filling process quicker and more user friendly for visitors. 
@@ -51,6 +51,18 @@ Text and number fields video [https://youtu.be/CXPq4270kA4](https://youtu.be/CXP
 Checkboxes fields video [https://youtu.be/C66gjrMBaRw](https://youtu.be/C66gjrMBaRw)
 
 == Changelog: ==
+
+01/26/2025
+Version @5.0.4
+ - Updated SDK
+ - Fixed issue with disabled button for hide next button. 
+ - Added loader on conversational form
+ - Other minor bug fixes.
+
+12/22/2024
+Version @5.0.3
+ - Added vendor support for upgrading.
+ - Fixed quiz and poll field issue.
 
 12/12/2024
 Version @5.0.2

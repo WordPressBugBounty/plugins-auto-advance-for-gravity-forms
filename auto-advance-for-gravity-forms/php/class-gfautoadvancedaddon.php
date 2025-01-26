@@ -172,7 +172,9 @@ class GFAutoAdvancedAddOn extends GFAddOn {
                 'textarea',
                 'checkbox',
                 'number',
-                'address'
+                'address',
+                'quiz',
+                'poll'
             ];
             $vars = array(
                 'prem' => array(
@@ -222,7 +224,7 @@ class GFAutoAdvancedAddOn extends GFAddOn {
         wp_enqueue_style(
             'gfaa-animate',
             ZZD_AAGF_URL . 'css/animate.min.css',
-            array(),
+            array('gravity_forms_theme_foundation', 'gravity_forms_theme_framework'),
             AUTO_ADVANCED_ASSETS
         );
         wp_enqueue_style(
@@ -568,7 +570,7 @@ class GFAutoAdvancedAddOn extends GFAddOn {
 			
 			<li class="gfaa_field_list_value field_setting">
 				<input type="checkbox" id="field_list_value" onclick="SetFieldProperty('autoAdvancedField', this.checked); 
-					if(this.checked && ( field.type == 'text' || field.type == 'textarea' || field.type == 'checkbox' || field.type == 'number' || field.type == 'address' ) ) { $('.gfaa_inputNumberKeys').show();} else { $('.gfaa_inputNumberKeys').hide(); }	 " 
+					if(this.checked && ( field.type == 'text' || field.type == 'textarea' || field.type == 'checkbox' || field.type == 'number' || field.type == 'address' ) ) { jQuery('.gfaa_inputNumberKeys').show();} else { jQuery('.gfaa_inputNumberKeys').hide(); }	 " 
 				/>
 				<label class="inline" for="field_list_value">
 					<?php 
@@ -600,6 +602,9 @@ class GFAutoAdvancedAddOn extends GFAddOn {
 						<?php 
                 echo ( $function_next_button ? '' : 'disabled' );
                 ?>
+						class="<?php 
+                echo ( $function_next_button ? '' : 'disabled' );
+                ?>"
 					/>
 					<label class="inline" for="hide_next_button">
 						<?php 
@@ -617,6 +622,9 @@ class GFAutoAdvancedAddOn extends GFAddOn {
 						<?php 
                 echo ( $function_previous_button ? '' : 'disabled' );
                 ?>
+						class="<?php 
+                echo ( $function_previous_button ? '' : 'disabled' );
+                ?>"
 					/>
 					<label class="inline" for="hidePreviousButton">
 						<?php 

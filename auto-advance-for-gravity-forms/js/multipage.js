@@ -90,6 +90,11 @@ jQuery( document ).ready( function($) {
 		} )
 	}
 	
+	$(document).on('click', '.conv-form-container .gform-page-footer .button', function() {
+	    
+			$('.conv-form-container .loader').show();
+	});
+	
 	$(document).on('click', '.conv-form-footer-switch-step-up', function() {
 		
 		$container = $(this).parents('.conv-form-container');
@@ -104,6 +109,7 @@ jQuery( document ).ready( function($) {
 		
 		if( $form.find('.gform_page:visible').find('.gform_previous_button').length ) {
 			$(this).addClass('active');
+			$('.conv-form-container .loader').show();
 			$form.find('.gform_page:visible').find('.gform_previous_button').trigger('click');
 		}
 	});
@@ -122,10 +128,12 @@ jQuery( document ).ready( function($) {
 		
 		if( $form.find('.gform_page:visible').find('.gform_next_button').length ) {
 			$(this).addClass('active');
+			$('.conv-form-container .loader').show();
 			$form.find('.gform_page:visible').find('.gform_next_button').trigger('click');
 		}
 		else if( $form.find('.gform_page:visible').find('.gform_button').length ) {
 			$(this).addClass('active');
+			$('.conv-form-container .loader').show();
 			$form.find('.gform_page:visible').find('.gform_button').trigger('click');
 		}
 		
@@ -436,6 +444,8 @@ jQuery( document ).ready( function($) {
 						
 						gformInitSpinner(form_id, gf_global.spinnerUrl, false);
 						window['gf_submitting_' + form_id] = false;
+						
+						$('.loader').hide();
 					}, 150);
 				} 
 				else {
@@ -515,6 +525,7 @@ jQuery( document ).ready( function($) {
 							}
 							gformInitSpinner(form_id, gf_global.spinnerUrl, false);
 							window['gf_submitting_' + form_id] = false;
+							$('.loader').hide();
 						}, 150);
 					});
 				}
@@ -541,6 +552,8 @@ jQuery( document ).ready( function($) {
 				setTimeout(function() {
 					$(document).trigger('gform_confirmation_loaded', [1]);
 					window['gf_submitting_' + form_id] = false;
+					
+					$('.loader').hide();
 				}, 50);
 			}
 			
@@ -550,6 +563,7 @@ jQuery( document ).ready( function($) {
 				$redirect = $redirect.replace('function gformRedirect(){', '');
 				$redirect = $redirect.replace('}', '');
 				eval($redirect);
+				$('.loader').hide();
 			}
 		
 		});
@@ -698,6 +712,8 @@ jQuery( document ).ready( function($) {
 				else {
 					$this.parents('form').trigger('submit', [true]);
 				}
+				
+				$('.conv-form-container .loader').show();
 			}, 200 );
 		}
 		

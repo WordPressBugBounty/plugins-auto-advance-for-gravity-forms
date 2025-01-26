@@ -311,7 +311,7 @@ jQuery(document).ready(function($) {
 			}
 		}
 		
-		var fields = ['radio', 'select', 'quiz', 'poll'];
+		var fields = ['radio', 'select'];
 		if ( $.inArray( field.type, fields) !== -1) { 
 			$('.gfaa_inputNumberKeys').hide();
 			$('.gfaa_field_list_value').show();
@@ -353,7 +353,7 @@ jQuery(document).ready(function($) {
 		}
 		
 		
-		if( typeof $('#hide_next_button').attr('disabled') != 'undefined' || typeof $('#hidePreviousButton').attr('disabled') != 'undefined' ) {
+		if( $('#hide_next_button').hasClass('disabled') || $('#hidePreviousButton').hasClass('disabled')  ) {
 			$('#hide_next_button').prop('checked', false);
 			$('#hidePreviousButton').prop('checked', false);
 			
@@ -361,6 +361,19 @@ jQuery(document).ready(function($) {
 			SetFieldProperty('hidePreviousButton', false);
 		}
 	});
-
+	
+	/*$(document).on( 'change', '#field_list_value', function() {
+		
+		console.log('h1');
+		console.log(field);
+		jQuery('.gfaa_inputNumberKeys').hide();
+		if( this.checked ) {
+			
+			if ( field.type == 'text' || field.type == 'textarea' || field.type == 'checkbox' || field.type == 'number' || field.type == 'address' ) {
+				
+				jQuery('.gfaa_inputNumberKeys').show();
+			}
+		}
+	} );*/
 
 });
