@@ -3,8 +3,8 @@ Contributors: zerozendesign, duffcoventures
 Tags: Gravity Forms, Auto advance, Multi Step, Multi Form, Addon
 Requires PHP at least: 5.2.4 
 License: GPLv2 or later
-Tested up to: 6.7.1
-Stable tag: 5.0.4
+Tested up to: 6.7.2
+Stable tag: 5.0.5
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Description: The Auto Advance plugin for Gravity Forms makes the form filling process quicker and more user friendly for visitors. 
@@ -52,6 +52,10 @@ Checkboxes fields video [https://youtu.be/C66gjrMBaRw](https://youtu.be/C66gjrMB
 
 == Changelog: ==
 
+02/16/2025
+Version @5.0.5
+ - Updated SDK
+ 
 01/26/2025
 Version @5.0.4
  - Updated SDK

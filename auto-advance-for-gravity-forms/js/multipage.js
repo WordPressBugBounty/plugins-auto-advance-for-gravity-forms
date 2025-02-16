@@ -92,7 +92,7 @@ jQuery( document ).ready( function($) {
 	
 	$(document).on('click', '.conv-form-container .gform-page-footer .button', function() {
 	    
-			$('.conv-form-container .loader').show();
+			$('.conv-form-container .loader').addClass('show');
 	});
 	
 	$(document).on('click', '.conv-form-footer-switch-step-up', function() {
@@ -109,7 +109,7 @@ jQuery( document ).ready( function($) {
 		
 		if( $form.find('.gform_page:visible').find('.gform_previous_button').length ) {
 			$(this).addClass('active');
-			$('.conv-form-container .loader').show();
+			$('.conv-form-container .loader').addClass('show');
 			$form.find('.gform_page:visible').find('.gform_previous_button').trigger('click');
 		}
 	});
@@ -128,12 +128,12 @@ jQuery( document ).ready( function($) {
 		
 		if( $form.find('.gform_page:visible').find('.gform_next_button').length ) {
 			$(this).addClass('active');
-			$('.conv-form-container .loader').show();
+			$('.conv-form-container .loader').addClass('show');
 			$form.find('.gform_page:visible').find('.gform_next_button').trigger('click');
 		}
 		else if( $form.find('.gform_page:visible').find('.gform_button').length ) {
 			$(this).addClass('active');
-			$('.conv-form-container .loader').show();
+			$('.conv-form-container .loader').addClass('show');
 			$form.find('.gform_page:visible').find('.gform_button').trigger('click');
 		}
 		
@@ -445,7 +445,7 @@ jQuery( document ).ready( function($) {
 						gformInitSpinner(form_id, gf_global.spinnerUrl, false);
 						window['gf_submitting_' + form_id] = false;
 						
-						$('.loader').hide();
+						$('.loader').removeClass('show');
 					}, 150);
 				} 
 				else {
@@ -525,7 +525,7 @@ jQuery( document ).ready( function($) {
 							}
 							gformInitSpinner(form_id, gf_global.spinnerUrl, false);
 							window['gf_submitting_' + form_id] = false;
-							$('.loader').hide();
+							$('.loader').removeClass('show');
 						}, 150);
 					});
 				}
@@ -553,7 +553,7 @@ jQuery( document ).ready( function($) {
 					$(document).trigger('gform_confirmation_loaded', [1]);
 					window['gf_submitting_' + form_id] = false;
 					
-					$('.loader').hide();
+					$('.loader').removeClass('show');
 				}, 50);
 			}
 			
@@ -563,7 +563,7 @@ jQuery( document ).ready( function($) {
 				$redirect = $redirect.replace('function gformRedirect(){', '');
 				$redirect = $redirect.replace('}', '');
 				eval($redirect);
-				$('.loader').hide();
+				$('.loader').removeClass('show');
 			}
 		
 		});
@@ -713,7 +713,7 @@ jQuery( document ).ready( function($) {
 					$this.parents('form').trigger('submit', [true]);
 				}
 				
-				$('.conv-form-container .loader').show();
+				$('.conv-form-container .loader').addClass('show');
 			}, 200 );
 		}
 		
