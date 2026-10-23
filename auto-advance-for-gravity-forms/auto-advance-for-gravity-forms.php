@@ -5,7 +5,7 @@ Plugin Name: Auto Advance for GravityForms
 Description:  The Auto Advance plugin for Gravity Forms makes the form filling process quicker and more user friendly for visitors. The plugin gives an easy way to choose which field(s) trigger an auto advance to the next step of your form.
 Version: 5.0.5
 Author: Frog Eat Fly
-Tested up to: 6.7.2
+Tested up to: 7.0
 Author URI: https://www.multipagepro.com/
 */
 define( 'AAFG_PRO_PLAN_NAME', 'autoadvanceforgravityformspro' );
