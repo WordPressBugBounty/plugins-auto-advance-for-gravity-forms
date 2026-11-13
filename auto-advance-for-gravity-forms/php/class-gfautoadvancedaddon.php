@@ -249,8 +249,11 @@ class GFAutoAdvancedAddOn extends GFAddOn {
     }
 
     public function backend_scripts() {
-        wp_enqueue_media();
-    }
+		// Only the Gravity Forms screens need the media library (conversational side image).
+		if ( GFForms::is_gravity_page() ) {
+			wp_enqueue_media();
+		}
+	}
 
     public function modify_gform_field_data( $form ) {
         if ( !isset( $form['gfaa'] ) || !isset( $form['gfaa']['enable_animation'] ) || !$form['gfaa']['enable_animation'] ) {

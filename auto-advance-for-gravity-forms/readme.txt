@@ -1,23 +1,25 @@
 === Multi Page Auto Advance for Gravity Forms ===
 Contributors: zerozendesign, duffcoventures
-Tags: gravity forms, auto advance, multi page forms, hide next button, conversational forms
-Requires PHP at least: 5.2.4 
+Tags: gravity forms, auto advance, multi page forms, typeform, conversational forms
+Requires PHP: 5.6
 License: GPLv2 or later
-Tested up to: 7.0
-Stable tag: 5.0.5
+Tested up to: 7.1
+Stable tag: 5.0.6
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Auto-advance Gravity Forms multi-page forms after radio/dropdown choices. Reduce clicks, hide Next buttons, and improve completion.
+Auto-advance Gravity Forms multi-page forms after radio/dropdown choices. Create faster intake, quote, lead, and Typeform-style forms.
 
 == Description ==
 
-Build faster **Gravity Forms multi-page forms** with fewer clicks. Multi Page Auto Advance moves visitors to the next page automatically after they answer supported fields, so your forms feel smoother without custom JavaScript.
+Build faster **Gravity Forms multi-page forms** with fewer clicks. Multi Page Auto Advance can move visitors to the next page automatically after supported radio button and dropdown choices, helping you create smoother lead forms, quote forms, client intake forms, quizzes, surveys, onboarding flows, and Typeform-style Gravity Forms experiences without custom JavaScript.
 
-Instead of asking visitors to answer a question, find the Next button, click again, and wait for the next step, this Gravity Forms add-on can advance the form immediately after a supported answer.
+Instead of asking visitors to answer a question, find the Next button, click again, and wait for the next step, this Gravity Forms add-on can advance the form immediately after a supported answer. Paid plans add production workflow controls such as conditional logic support, hide Next button options, animation, and broader field triggers.
 
-Use it for lead forms, intake forms, quizzes, surveys, quote requests, onboarding, and any Gravity Forms workflow where fewer clicks can improve completion.
+Use it for lead forms, client intake forms, quote request forms, onboarding flows, quizzes, surveys, and agency-built Gravity Forms workflows where fewer clicks can improve completion.
 
 = What the free plugin does =
+
+Free is the simple distribution version: it gives WordPress site owners the core Gravity Forms auto-advance experience for radio buttons and dropdowns.
 
 * Auto-advance Gravity Forms pages after radio button choices
 * Auto-advance Gravity Forms pages after dropdown selections
@@ -32,19 +34,20 @@ Use it for lead forms, intake forms, quizzes, surveys, quote requests, onboardin
 * Gravity Forms auto advance after a dropdown choice
 * Multi-step lead generation forms
 * Client intake forms with fewer clicks
+* Agency client-site Gravity Forms workflows
 * Quiz and survey flows
 * Quote request forms
 * Typeform-style WordPress forms built with Gravity Forms
 
 = Which plan should I use? =
 
-* **Free** is best for simple multi-page Gravity Forms that should advance after a radio button or dropdown answer.
-* **Pro** is best when you need more polished multi-page behavior, including hidden navigation buttons, conditional logic handling, transition animations, step color controls, and advanced Gravity Forms add-on workflows such as products, polls, quizzes, and surveys.
-* **Plus** is best for agencies and advanced one-question-at-a-time forms. It adds broader field triggers such as checkbox, text, textarea, number, and address fields, plus upgraded conversational form functionality and unlimited-site licensing.
+* **Free** is best for basic multi-page Gravity Forms that should advance after a radio button or dropdown answer.
+* **Pro** is the single-site business plan for serious intake, quote, lead, survey, and onboarding forms that need a smoother production workflow.
+* **Plus** is the agency and unlimited-site plan for teams building Typeform-style Gravity Forms flows across client websites.
 
-== Pro ($39.99/year) ==
+== Pro: single-site business plan ==
 
-Upgrade to Pro when your Gravity Forms workflow needs more polished multi-page behavior.
+Upgrade to Pro when one business website depends on smoother Gravity Forms workflows.
 
 Everything from Free, plus:
 
@@ -56,9 +59,13 @@ Everything from Free, plus:
 6. Transition animations
 7. Step color controls
 
+Pro is a good fit for business websites using Gravity Forms for lead generation, client intake, quote requests, consultation requests, onboarding, quizzes, surveys, and other conversion-focused multi-page forms.
+
 [[GET PRO]](https://checkout.freemius.com/mode/dialog/plugin/6159/plan/10072/)
 
-== Plus ($59/year or $225 lifetime) ==
+== Plus: agency and unlimited-site plan ==
+
+Upgrade to Plus when you build Gravity Forms workflows across multiple websites or client sites.
 
 Everything from Pro, plus broader auto-advance triggers and upgraded conversational form functionality for more advanced one-question-at-a-time experiences.
 
@@ -70,6 +77,8 @@ Plus adds:
 4. Address field auto-advance
 5. Upgraded conversational form functionality
 6. Unlimited-site licensing for client and agency work
+
+Plus is designed for agencies, freelancers, WordPress consultants, and multi-site operators who want faster Gravity Forms intake forms, quote forms, lead forms, and Typeform-style client workflows without rebuilding everything in another form tool.
 
 [Watch the conversational settings video](https://youtu.be/LUk1OwOZb-0)
 
@@ -103,11 +112,15 @@ Once enabled, the selected field can trigger Gravity Forms to move to the next p
 
 == Frequently Asked Questions ==
 
+= Can I make Gravity Forms automatically go to the next page? =
+
+Yes. Multi Page Auto Advance lets supported fields move visitors to the next Gravity Forms page automatically after an answer is selected, reducing the need to click the Next button after every step.
+
 = Which Gravity Forms fields are supported in the free version? =
 
 The free version supports radio button fields and dropdown fields.
 
-Pro adds product, poll, quiz, survey, conditional logic, navigation, animation, and Gravity Forms Conversational Forms Add-On workflow support. Plus adds broader trigger fields, including checkbox, text, textarea, number, and address fields.
+Pro adds product, poll, quiz, survey, conditional logic, navigation, animation, and Gravity Forms Conversational Forms Add-On workflow support for a single business site. Plus adds broader trigger fields, including checkbox, text, textarea, number, and address fields, plus unlimited-site licensing for agency and client work.
 
 = Does this work with Gravity Forms multi-page forms? =
 
@@ -126,7 +139,15 @@ Yes. The plugin includes settings for hiding manual navigation buttons where app
 
 = Can I build a Typeform-style form with Gravity Forms? =
 
-Yes. Multi Page Auto Advance can help create a more conversational, one-question-at-a-time Gravity Forms experience. The free version supports basic radio and dropdown auto-advance, while Pro and Plus add more advanced field and conversational form support.
+Yes. Multi Page Auto Advance can help create a more conversational, one-question-at-a-time Gravity Forms experience. The free version supports basic radio and dropdown auto-advance, Pro adds more production-ready multi-page behavior for one business site, and Plus adds broader trigger fields plus unlimited-site licensing for agencies and client websites.
+
+= Why use this instead of moving the form to Typeform? =
+
+Use Multi Page Auto Advance when you already rely on WordPress and Gravity Forms for entries, notifications, integrations, conditional logic, and site ownership. It can make existing Gravity Forms feel more Typeform-style while keeping submissions, add-ons, and workflows inside your WordPress stack.
+
+= Is this useful for agencies that build Gravity Forms sites for clients? =
+
+Yes. Plus is built for agencies, freelancers, WordPress consultants, and teams managing Gravity Forms across multiple client sites. It gives you unlimited-site licensing, broader field triggers, and upgraded conversational form functionality for intake forms, quote forms, onboarding forms, and lead generation workflows.
 
 = Does auto-advance replace Gravity Forms? =
 
@@ -138,10 +159,22 @@ Yes, as long as both are not set as "required". If both are 'required' then the 
 
 == Screenshots ==
 
-1. http://nimb.ws/2q3sna
-2. http://nimb.ws/sX2IVP
+1. Enable auto-advance from a Gravity Forms radio or dropdown field setting.
+2. Visitors move to the next form page automatically after selecting an answer.
+3. Hide Next and Previous buttons where auto-advance creates a smoother flow.
+4. Use auto-advance with conditional logic for advanced Gravity Forms workflows.
+5. Plus adds checkbox, text, textarea, number, and address trigger support.
+6. Plus is built for agencies and unlimited client-site Gravity Forms workflows.
 
 == Changelog ==
+
+= 5.0.6 =
+
+* Removed the outdated upgrade banner that appeared on every admin screen.
+* Plugin notices now appear only on Gravity Forms screens, one at a time, and stay dismissed.
+* Hardened the notice dismiss request with a nonce and capability check.
+* The media library now loads only on Gravity Forms screens.
+* Tested with WordPress 7.1.
 
 = 5.0.5 =
 

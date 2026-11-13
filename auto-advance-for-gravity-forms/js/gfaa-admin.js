@@ -1,22 +1,5 @@
 jQuery(document).ready(function($) {
 	
-	jQuery(document).on('click', '.aafg-notice .notice-dis', function(){ 
-		$( this ).parents('.aafg-notice').find('.notice-dismiss').click();
-	});
-	jQuery(document).on('click', '.aafg-notice .notice-dismiss', function(){ 
-		
-		var notice_id = $( this ).parents('.aafg-notice').attr( 'id' ) || '';
-		jQuery.ajax({
-			url: aafg.ajaxurl,
-			type: 'POST',
-			data: {
-				action            : 'aafg-notice-dismiss',
-				notice_id         : notice_id,
-			},
-		});
-	});
-	
-	
 	if( $("#toplevel_page_gf_edit_forms .auto-advance-for-gravity-forms.pricing.upgrade-mode").length > 0) {
 		$("#toplevel_page_gf_edit_forms .auto-advance-for-gravity-forms.pricing.upgrade-mode").parent().attr("href", "https://multipagepro.com/").attr("target", "_blank");
 	}
@@ -224,26 +207,29 @@ jQuery(document).ready(function($) {
 	});
 	
 	
-	gform.addAction("formEditorNullClick", function(e) {
+	// gform.addAction only exists in the form editor; guard so the rest of this file still runs elsewhere.
+	if ( window.gform && typeof gform.addAction === 'function' ) {
+		gform.addAction("formEditorNullClick", function(e) {
 		
-		var $target = $(e.target);
+			var $target = $(e.target);
 		
-		if( $target.hasClass('custom-button') ) {
-			var custom_uploader = wp.media({
-				title: 'Choose Image',
-				button: {
-					text: 'Choose Image'
-				},
-				multiple: false  // Set this to true to allow multiple files to be selected
-			}).on('select', function() {
-				var attachment = custom_uploader.state().get('selection').first().toJSON();
-				$('#gfac_image_url').val(attachment.url);
+			if( $target.hasClass('custom-button') ) {
+				var custom_uploader = wp.media({
+					title: 'Choose Image',
+					button: {
+						text: 'Choose Image'
+					},
+					multiple: false  // Set this to true to allow multiple files to be selected
+				}).on('select', function() {
+					var attachment = custom_uploader.state().get('selection').first().toJSON();
+					$('#gfac_image_url').val(attachment.url);
 				
-				SetFieldProperty('gfac_image_url', attachment.url);						
+					SetFieldProperty('gfac_image_url', attachment.url);						
 				
-			}).open();
-		}
-	});
+				}).open();
+			}
+		});
+	}
 	
 	
 	$(document).on('click', '.custom-button-field', function(e) {
